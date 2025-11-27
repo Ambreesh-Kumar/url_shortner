@@ -1,0 +1,34 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: gray;
+  padding: 10px 20px;
+  margin: auto;
+  border: 2px solid #000;
+  gap: 10px;
+  max-width: 500px;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: gray;
+  padding: 10px 20px;
+  margin: auto;
+  border: 2px solid #000;
+  gap: 10px;
+  max-width: 500px;
+}
+.shortBtn {
+  background-color: blue;
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}

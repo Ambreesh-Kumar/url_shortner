@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Url Shortener</title>
-</head>
-<body>
-    <h1>Welcome to Url Shortener</h1>
-</body>
+    <link rel="stylesheet" href="formStyle.css" />
+  </head>
+  <body>
+    <div class="formContainer">
+      <h1>Welcome to Url Shortener</h1>
+      <form action="/short_url" method="POST">
+        <div>
+          <label for="longUrl">Long Url: </label>
+          <input type="text" name="LongUrl" placeholder="Enter url" />
+          <br />
+          <br />
+          <button type="submit" class="shortBtn">Shorten</button>
+        </div>
+        <% if (shortUrl) {%>
+        <p>
+          Short url:
+          <a href="<%= shortUrl %>" target="_blank"><%= shortUrl %></a>
+        </p>
+        <%}%>
+      </form>
+    </div>
+  </body>
 </html>
